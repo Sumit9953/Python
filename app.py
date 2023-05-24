@@ -186,7 +186,7 @@ except ValueError:
 finally:
     print('try except finished')
 
-'''
+
 
 # ------------------ File reading and writing--------------
 
@@ -207,3 +207,28 @@ finally:
 coun_file = open("countries.txt", 'a') # for append new text
 coun_file = open("Newpython.py", 'w') 
 coun_file.write("print(\'This is new file \')")
+
+
+#-------------class and object-----------
+
+# class Person:
+#     def __init__(self , name ,age):
+#         self.name = name
+#         self.age = age
+        
+# p1 = Person("sumit" , 21)
+# print(p1.name)
+
+#-------------Inheritewnce-------------------
+
+from Newpython import Student
+
+class Person(Student):
+    pass
+
+p1 = Person()
+print(p1.name)
+
+'''
+
+ 
