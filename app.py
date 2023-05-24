@@ -1,6 +1,6 @@
-from math import *
+# from math import *
 
-print("Helllo world")
+# print("Helllo world")
 
 # ----------string----------------
 # name = "sumit"
@@ -176,10 +176,34 @@ elif op == "/":
 else:
     print("Not valid operator")
 
-'''
+
 # ---------------- Try and Except---------------------
 try:
     x = int(input('Input an integer: '))
     print(x)
-except:
-    print("Value not an integer ")
+except ValueError:
+    print("Not a integer")
+finally:
+    print('try except finished')
+
+'''
+
+# ------------------ File reading and writing--------------
+
+# coun_file = open("countries.txt", 'r')
+
+#------------ Reading file
+# print(coun_file.readable())
+# print(coun_file.readline())
+# print(coun_file.readlines())
+# print(coun_file.readlines()[3])
+
+# for lines in coun_file.readlines():
+#     print(lines)
+
+# coun_file.close()
+
+# coun_file = open("countries.txt", 'w') for writing
+coun_file = open("countries.txt", 'a') # for append new text
+coun_file = open("Newpython.py", 'w') 
+coun_file.write("print(\'This is new file \')")
